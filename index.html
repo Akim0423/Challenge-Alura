@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de Textos</title>
+</head>
+<body>
+    <header>
+        <img class="imagen" src="IMG/alura_1.png" alt="Alura logo">
+    </header>
+    <h1>Encriptador de Textos</h1>
+    <main>
+        <section class="input-section">
+            <textarea class="text" id="inputText" placeholder="Ingrese el texto aquí"></textarea>
+            <small>Solo letras minúsculas y sin acentos</small>
+            <div class="buttons">
+                <button class="encriptar" onclick="encrypt()">Encriptar</button>
+                <button class="desencriptar" onclick="decrypt()">Desencriptar</button>
+            </div>
+            
+        </section>
+        <section class="output-section">
+            <div id="resultText"> 
+                <img src="IMG/1 (1).png" alt="persona" class="persona">
+                <p class="Mensaje">Ningun mensaje fue encontrado</p>
+                <p class="Ingreso">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <button class="copiar" onclick="copyText()">Copiar</button>
+        </section>
+    </main>
+    <footer>Desarrollado por Joaquin Aparcana</footer>
+    <script src="app.js"></script>
+</body>
+</html>
